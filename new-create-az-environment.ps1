@@ -242,6 +242,7 @@ Write-Host 'Job 2 Started...' -ForegroundColor Yellow
 $results[$vm3] = Create-CustomVM -VMName $vm3 -location $location -resourceGroupName $resourceGroupName -VirtulNetwork $virtualnetwork -adminuser $adminuser -availabilitySetName 'RedTeamAS'
 Write-Host 'Job 3 Started...' -ForegroundColor Yellow
 
+
 # Wait for completion of vms.
 Write-Host "Waiting for VM Builds to Complete..." -ForegroundColor Yellow
 $i = 0
